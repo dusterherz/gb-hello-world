@@ -66,4 +66,4 @@ FontTilesEnd:
 SECTION "Hello World string", ROM0
 
 HelloWorldStr:
-    db "Hello Dernier Cri !", 0
+    db "Hello Github !", 0
