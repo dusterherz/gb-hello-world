@@ -2,3 +2,4 @@
 *.gb
 *.o
 /build
+release.zip

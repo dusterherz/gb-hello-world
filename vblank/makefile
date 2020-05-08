@@ -6,7 +6,7 @@ OUTPUT_DIR = ..
 SRC = $(wildcard *.asm)
 OBJS = $(SRC:.asm=.o)
 
-GAME_NAME = hello-world
+GAME_NAME = vblank
 
 
 all: clean build link fix

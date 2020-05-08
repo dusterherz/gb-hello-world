@@ -1,2 +1,3 @@
 all:
-	+$(MAKE) -C helloworld
+	+$(MAKE) -C helloworld all
+	+$(MAKE) -C vblank all
