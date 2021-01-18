@@ -55,14 +55,20 @@ ld a, %10000001
 ld [rLCDC], a
 
 xor d
+xor e
+
 .scrolling
     ld a, [rLY]
     cp a, 144
     jr nz, .scrolling
-    inc d
+    inc e
+    ld a, 5; change the value of a to increment or decrement the speed of the scrolling
+    and e
+    jr nz, .scrolling
+    dec d
     ld a, d
-    ld [rSCY], a
-    ld [rSCX], a
+    ; ld [rSCY], a ; scroll vertically
+    ldh [rSCX], a ; scroll horizontally
     jr .scrolling
 
 SECTION "Font", ROM0
@@ -74,4 +80,4 @@ FontTilesEnd:
 SECTION "Hello World string", ROM0
 
 HelloWorldStr:
-    db "Hello Github !", 0
+    db "Il fait froid !", 0

@@ -11,6 +11,7 @@ This is a list of what you can find inside and which folder correspond to what.
 
 - `helloworld` : A Basic Hello World
 - `vblank` : An experimentation to see what the screen does if you try to edit display not during vblank (not recommended)
+- `scrolling` : Hello world but with scrolling
 
 ## Get the roms
 
