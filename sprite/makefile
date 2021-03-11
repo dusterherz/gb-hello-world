@@ -6,17 +6,17 @@ OUTPUT_DIR = .
 SRC = $(wildcard *.asm)
 OBJS = $(SRC:.asm=.o)
 
-GAME_NAME = scrolling
+GAME_NAME = sprite
 
 
 all: clean build link fix
 
 build:
 	mkdir $(BUILD_DIR)
-	$(ASM) -o $(BUILD_DIR)/$(OBJS) $(SRC)
+	$(ASM) -Werror -Weverything -o $(BUILD_DIR)/$(OBJS) $(SRC) 
 
 link:
-	$(LINKER) -o $(OUTPUT_DIR)/$(GAME_NAME).gb $(BUILD_DIR)/$(OBJS)
+	$(LINKER) -o $(OUTPUT_DIR)/$(GAME_NAME).gb $(BUILD_DIR)/$(OBJS) -n $(OUTPUT_DIR)/$(GAME_NAME).sym -m $(OUTPUT_DIR)/$(GAME_NAME).map
 
 fix:
 	$(FIX) -v -p 0 $(OUTPUT_DIR)/$(GAME_NAME).gb

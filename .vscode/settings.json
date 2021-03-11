@@ -1,0 +1,11 @@
+{
+    "saveAndRunExt": {
+        "commands": [
+            {
+                "match": "\\.(asm|inc)",
+                "isShellCommand": false,
+                "cmd": "workbench.action.debug.restart"
+            }
+        ]
+    }
+}

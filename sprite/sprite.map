@@ -1,0 +1,28 @@
+ROM0 bank #0:
+  SECTION: $0000-$0084 ($0085 bytes) ["Game Code"]
+           $0000 = Start
+           $0000 = Start.init
+           $0006 = Start.initTiles
+           $0012 = Start.copyTiles
+           $001a = Start.enableInterrupts
+           $001e = Start.setPalette0
+           $0026 = Start.setSprite
+           $003e = Start.enableScreen
+           $0042 = Main
+           $0042 = StartEnd
+           $0053 = MoveSprite
+           $0053 = MainEnd
+           $0061 = MoveSprite.moveLeft
+           $0067 = MoveSprite.moveRight
+           $006d = MoveSprite.checkDirection
+           $007b = MoveSprite.directionLeft
+           $0080 = MoveSprite.directionRight
+  SECTION: $0100-$014f ($0050 bytes) ["Header"]
+           $0100 = EntryPoint
+  SECTION: $0150-$114f ($1000 bytes) ["Tiles"]
+           $0150 = InputTiles
+           $1150 = InputTilesEnd
+    SLACK: $2f2b bytes
+
+FREE:
+    ROM0: $2f2b bytes in 1 bank
