@@ -1,0 +1,16 @@
+ROM0 bank #0:
+  SECTION: $0000-$002d ($002e bytes) ["Game Code"]
+           $0000 = Start
+           $0000 = Start.init
+           $000a = Start.initTiles
+           $0016 = Start.copyTiles
+           $001e = Main
+  SECTION: $0100-$014f ($0050 bytes) ["Header"]
+           $0100 = EntryPoint
+  SECTION: $0150-$114f ($1000 bytes) ["Tiles"]
+           $0150 = InputTiles
+           $1150 = InputTilesEnd
+    SLACK: $2f82 bytes
+
+FREE:
+    ROM0: $2f82 bytes in 1 bank
