@@ -2,7 +2,7 @@ ASM = rgbasm
 LINKER = rgblink
 FIX = rgbfix
 BUILD_DIR = build
-OUTPUT_DIR = ..
+OUTPUT_DIR = .
 SRC = $(wildcard *.asm)
 OBJS = $(SRC:.asm=.o)
 
