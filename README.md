@@ -12,6 +12,8 @@ This is a list of what you can find inside and which folder correspond to what.
 - `helloworld` : A Basic Hello World
 - `vblank` : An experimentation to see what the screen does if you try to edit display not during vblank (not recommended)
 - `scrolling` : Hello world but with scrolling
+- `sprite` : Handling of multiples sprites moving back and forth on the screen
+- `pokemonbattle`: A reproduction of the pokemon battle animation _tulululutudulutu_
 
 ## Get the roms
 

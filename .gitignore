@@ -2,5 +2,6 @@
 *.gb
 *.o
 *.sym
+*.map
 /build
 release.zip

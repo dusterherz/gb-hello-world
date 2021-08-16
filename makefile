@@ -3,3 +3,4 @@ all:
 	+$(MAKE) -C vblank all
 	+$(MAKE) -C scrolling all
 	+$(MAKE) -C sprite all
+	+$(MAKE) -C input all
